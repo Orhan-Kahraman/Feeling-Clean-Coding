@@ -1,4 +1,4 @@
-# video_player_with_http_package
+# Feeling Clean Code
 
 A new Flutter project.
 
