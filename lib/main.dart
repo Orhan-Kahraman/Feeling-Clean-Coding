@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:video_player_with_http_package/Vision/req_res_vision.dart';
 import 'package:video_player_with_http_package/Vision/service_vision.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class _VideoPlayerMain extends StatelessWidget {
     return MaterialApp(
       title: "Video Player",
       theme: ThemeData.dark(),
-      home: const ServiceVision(),
+      home: const ReqResVision(),
       debugShowCheckedModeBanner: false,
     );
   }

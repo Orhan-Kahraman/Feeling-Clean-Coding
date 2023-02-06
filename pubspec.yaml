@@ -13,9 +13,16 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  http: ^0.13.5
+
+  #Video Player
   video_player: ^2.5.1
+
+  #Service
   dio: ^4.0.6
+  http: ^0.13.5
+
+  #State Manager
+  provider: ^6.0.5
 
 dev_dependencies:
   flutter_test:
