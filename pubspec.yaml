@@ -13,9 +13,19 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  http: ^0.13.5
+
+  #Video Player
   video_player: ^2.5.1
+
+  #Service
   dio: ^4.0.6
+  http: ^0.13.5
+
+  #State Manager
+  provider: ^6.0.5
+
+  #animations
+  lottie: ^2.2.0
 
 dev_dependencies:
   flutter_test:
@@ -24,3 +34,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/lottie_items/
