@@ -1,9 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:video_player_with_http_package/Product/Global/resource_context.dart';
+import 'package:video_player_with_http_package/Product/Global/theme_settings.dart';
 import 'package:video_player_with_http_package/Vision/req_res_vision.dart';
-import 'package:video_player_with_http_package/Vision/service_vision.dart';
 
 void main() {
-  runApp(const _VideoPlayerMain());
+  runApp(MultiProvider(
+    providers: [
+      Provider(create: (_) => ReqResContext()),
+      ChangeNotifierProvider<ThemeNotifier>(
+          create: (context) => ThemeNotifier())
+    ],
+    builder: (context, child) => const _VideoPlayerMain(),
+  ));
 }
 
 class _VideoPlayerMain extends StatelessWidget {
@@ -14,7 +23,7 @@ class _VideoPlayerMain extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Video Player",
-      theme: ThemeData.dark(),
+      theme: context.watch<ThemeNotifier>().currentTheme,
       home: const ReqResVision(),
       debugShowCheckedModeBanner: false,
     );

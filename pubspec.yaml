@@ -24,6 +24,9 @@ dependencies:
   #State Manager
   provider: ^6.0.5
 
+  #animations
+  lottie: ^2.2.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -31,3 +34,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/lottie_items/
